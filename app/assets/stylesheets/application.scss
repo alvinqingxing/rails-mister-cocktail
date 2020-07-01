@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Schoolbell&family=Rock+Salt&display=swap');
+
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
@@ -11,3 +13,67 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body, html {
+  font-family: "Schoolbell";
+  color: white;
+  height: 100%;
+  padding: 5px;
+  background-color: black;
+  background-image: url("https://res.cloudinary.com/dnxszleia/image/upload/v1593222908/cocktails_f7sybr.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+
+h1 {
+  font-family: "Rock Salt";
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+h2 {
+  font-family: "Caveat";
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+h3 {
+  font-family: "Amatic SC";
+  font-size: 48px;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+a {
+  font-weight: normal;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+.btn {
+  color: white;
+}
+
+.btn:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+.banner {
+  height: 250px;
+  padding: 50px;
+}
+
+.message {
+  margin: 5px;
+  background-color: black;
+  opacity: .8;
+}

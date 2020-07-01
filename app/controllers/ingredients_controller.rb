@@ -14,9 +14,9 @@ class IngredientsController < ApplicationController
   def create
     @ingredient = Ingredient.new(ingredient_params)
     if @ingredient.save
-      redirect_to ingredient_path(@ingredient)
-    else
       redirect_to root_path
+    else
+      render 'new'
     end
   end
 

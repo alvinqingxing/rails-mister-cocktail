@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 message">
+      <h1>What's your cocktail?</h1>
+
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
+        <%= f.button :submit, class: 'btn btn-link' %>
+      <% end %>
+      <%= link_to "Back to cocktails", root_path %></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="message">Ingredients</h1>
+        <% @ingredients.each do |ingredient| %>
+          <div class="message"><%= ingredient.name %>
+          <%= link_to ingredient_path(ingredient), method: :delete, data: { confirm: "Are you sure?" } do %>
+          <i class="fa fa-trash destroy_ingredient"></i></div>
+          <% end %>
+        <% end %>
+      <div class="message"><%= link_to "Add a new ingredient", new_ingredient_path %></div>
+      <div class="message"><%= link_to "Back to cocktails", root_path %></div>
+    </div>
+  </div>
+</div>

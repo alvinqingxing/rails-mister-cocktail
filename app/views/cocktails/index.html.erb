@@ -10,7 +10,6 @@
         <%= cl_image_tag cocktail.photo.key, height: 80, crop: :fill %>
         <%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
       <% end %>
-      <div class="message"><%= link_to "Add a new ingredient", new_ingredient_path %></div>
       <div class="message"><%= link_to "Add a new cocktail", new_cocktail_path %></div>
     </div>
   </div>
